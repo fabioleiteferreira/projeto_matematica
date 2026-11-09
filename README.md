@@ -10,6 +10,11 @@ matemática. Foi o meu primeiro projeto de programação, desenvolvido no fim do
 
 ## Telas
 
+### Abertura
+Tela de apresentação que segue sozinha para o menu depois de 3 segundos.
+
+![Abertura](docs/prints/00-abertura.png)
+
 ### Menu principal
 Escolha o exercício pelos botões de opção. A tecla **Esc** ou o botão **Sair** fecham o programa com confirmação.
 
@@ -71,9 +76,6 @@ Compara dois números e mostra **=** ou **≠**.
 2. Abra `Projeto Matemática.sln`.
 3. Aperte **F5**.
 
-A tela de abertura usa o controle do **Windows Media Player** (já vem no Windows) para tocar a vinheta
-`vinheta-abertura-matematica.mp4`, que não está no repositório. Sem o vídeo, a abertura apenas segue para o menu.
-
 Os prints deste README são gerados por `tools/TIRAR-PRINTS.bat`, que compila o projeto e salva uma imagem de cada tela.
 
 ---
@@ -81,7 +83,7 @@ Os prints deste README são gerados por `tools/TIRAR-PRINTS.bat`, que compila o 
 ## Estrutura
 
 ```
-Form1  Frm_Abertura    tela de abertura (vinheta)
+Form1  Frm_Abertura    tela de abertura
 Form2  Frm_Acesso      menu principal
 Form3  Frm_Positivo    positivo, negativo ou neutro
 Form4  Frm_Dobro       dobro

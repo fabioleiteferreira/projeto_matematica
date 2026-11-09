@@ -40,6 +40,7 @@ try {
         Write-Host "  ok  $arquivo" -ForegroundColor Green
     }
 
+    Foto 'Frm_Abertura'   '00-abertura.png'                 { param($f) ($f.GetType().GetField('Timer_Abertura','NonPublic,Instance').GetValue($f)).Stop() }
     Foto 'Frm_Acesso'     '01-menu.png'                     $null
     Foto 'Frm_Operacao'   '02-operacoes-aritmeticas.png'    { param($f) (C $f 'Txt_Numero1').Text = '12'; (C $f 'Txt_Numero2').Text = '4'
                                                               foreach ($b in 'Btn_Adicao','Btn_Subtracao','Btn_Multiplicacao','Btn_Divisao') { (C $f $b).PerformClick() } }

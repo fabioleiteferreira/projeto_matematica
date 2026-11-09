@@ -34,12 +34,6 @@ namespace Projeto_Matemática
 
         private void Frm_Abertura_Load(object sender, EventArgs e)
         {
-            Wmp_Abertura.URL = "vinheta-abertura-matematica.mp4";
-        }
-
-        private void Wmp_Abertura_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }
