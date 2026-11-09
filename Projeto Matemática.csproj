@@ -196,7 +196,7 @@
     <None Include="Resources\imagem maior 1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\istockphoto-1210301928-612x612.jpg" />
+    <None Include="Resources\imagem_operacoes.jpg" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">

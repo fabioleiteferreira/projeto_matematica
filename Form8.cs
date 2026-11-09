@@ -44,7 +44,7 @@ namespace Projeto_Matemática
             if (!Char.IsNumber (e.KeyChar )&&!char.IsControl (e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("Somente Números", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite somente números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (e.KeyChar == 13)
             {
@@ -55,12 +55,12 @@ namespace Projeto_Matemática
 
                     if (n1 > n2 )
                     {
-                        MessageBox.Show("O 1° Numero é Maior", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("O 1º número é maior!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_Sinais.Text = ">";
                     }
                     else if (n1 == n2)
                     {
-                        MessageBox.Show("Não São Permitidos Numeros Iguais !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Os números são iguais. Digite números diferentes!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         
                         Txt_Segundo.Clear();
                         
@@ -68,13 +68,13 @@ namespace Projeto_Matemática
                     }
                     else
                     {
-                        MessageBox.Show("O 2° Número é Maior", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("O 2º número é maior!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_Sinais.Text = "<";
                     }
                 }
                 else
                 {
-                MessageBox.Show("Digite o Número", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite os dois números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
 
@@ -107,7 +107,7 @@ namespace Projeto_Matemática
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("Somente Numeros !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite somente números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (e.KeyChar == 13)
             {
@@ -120,7 +120,7 @@ namespace Projeto_Matemática
                 }
                 else
                 {
-                    MessageBox.Show("Digite o Numero !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Digite um número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                    
             }

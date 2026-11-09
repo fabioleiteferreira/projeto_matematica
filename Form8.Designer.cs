@@ -85,7 +85,7 @@ namespace Projeto_Matemática
             this.Lbl_Segundo.Name = "Lbl_Segundo";
             this.Lbl_Segundo.Size = new System.Drawing.Size(94, 30);
             this.Lbl_Segundo.TabIndex = 3;
-            this.Lbl_Segundo.Text = "2° Numero";
+            this.Lbl_Segundo.Text = "2º Número";
             // 
             // Lbl_Primeiro
             // 
@@ -96,7 +96,7 @@ namespace Projeto_Matemática
             this.Lbl_Primeiro.Name = "Lbl_Primeiro";
             this.Lbl_Primeiro.Size = new System.Drawing.Size(120, 25);
             this.Lbl_Primeiro.TabIndex = 4;
-            this.Lbl_Primeiro.Text = "1° Numero";
+            this.Lbl_Primeiro.Text = "1º Número";
             // 
             // Lbl_Sinais
             // 

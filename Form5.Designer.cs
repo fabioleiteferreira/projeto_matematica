@@ -60,7 +60,7 @@ namespace Projeto_Matemática
             this.Lbl_Digite.Name = "Lbl_Digite";
             this.Lbl_Digite.Size = new System.Drawing.Size(302, 23);
             this.Lbl_Digite.TabIndex = 1;
-            this.Lbl_Digite.Text = "Digite um Numero Inteiro";
+            this.Lbl_Digite.Text = "Digite um número inteiro";
             // 
             // Txt_Inteiro
             // 
@@ -172,7 +172,7 @@ namespace Projeto_Matemática
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_Antecessor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ANTECESSSOR E SUCESSOR";
+            this.Text = "ANTECESSOR E SUCESSOR";
             this.Load += new System.EventHandler(this.Frm_Antecessor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

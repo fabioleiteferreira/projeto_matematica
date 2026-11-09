@@ -25,7 +25,7 @@ namespace Projeto_Matemática
             {
                 e.Handled = true;
 
-                MessageBox.Show("Somente Numeros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite somente números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (e.KeyChar == 13)
             {
@@ -36,7 +36,7 @@ namespace Projeto_Matemática
                     }
                     else //Caso contrario , se não for digitado o numero //
                     {
-                    MessageBox.Show("Digite o numero !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Digite um número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
             }
@@ -49,7 +49,7 @@ namespace Projeto_Matemática
             {
                 e.Handled = true;
 
-                MessageBox.Show("Digite o numero !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite um número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
                  
                 
@@ -62,12 +62,12 @@ namespace Projeto_Matemática
 
                     if (n1 == n2) // Condição para verificar se os números são iguais //
                     {
-                        MessageBox.Show("Os numeros são iguais !!!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Os números são iguais!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_Interrogação.Text = "="; // Midando a interrogação para o sinal =
                     }
                     else // Caso ao contrario os numeros não forem iguais //
                     {
-                        MessageBox.Show("Os Numeros São Diferentes", " Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Os números são diferentes!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_Interrogação.Text = "≠";
                     }
                 }

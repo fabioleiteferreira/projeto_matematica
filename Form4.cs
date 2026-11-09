@@ -36,7 +36,7 @@ namespace Projeto_Matemática
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !(e.KeyChar == ',')) // Condição para ver
             {
                 e.Handled = true; // Verificando e confirma se a tecla pressionada é  numero
-                MessageBox.Show("Somente Números !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Digite somente números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             if (e.KeyChar == 13) // Condição para verificar se a tecla enter foi pressionada //
 
@@ -44,14 +44,14 @@ namespace Projeto_Matemática
                 {
                     num = double.Parse(Txt_Dobro.Text); // Variavel está recebendo o numero que  foi digitado e condição
                     num = num + num; // Calculo do Dobro //
-                    MessageBox.Show("O Dobro do Número é:" + num, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("O dobro do número é: " + num, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     Txt_Dobro.Clear(); // Limpando o numero digitado para o Próximo numero //
                     Txt_Dobro.Focus(); // Posição do cursor //
                 }
                 else // se o numero não for digitado //
                 {
 
-                    MessageBox.Show("Digite Apenas Números", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Digite um número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                     {
 

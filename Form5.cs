@@ -67,18 +67,18 @@ namespace Projeto_Matemática
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar)) // Condição para verificar se foi digitado numeros
             {
                 e.Handled = true; // Verifica e confirma atecla pressionada foi o numero
-                MessageBox.Show("Digite o numero !!!", " Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Digite um número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             if(e.KeyChar ==13)//Condição se o enter enter foi pressionada 
             {
 
             if (Txt_Inteiro.Text=="") // Condição para verificar se a caixa esta vazia
             {
-                MessageBox.Show("Digite o Numero !!!", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Error);  //Mensagem de erro //
+                MessageBox.Show("Digite um número!", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Error);  //Mensagem de erro //
             }
             else // Caso contrário , se se for digitado o numero
                 {
-                    MessageBox.Show("Clique nos Botões Abaixo", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Agora clique nos botões abaixo.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }

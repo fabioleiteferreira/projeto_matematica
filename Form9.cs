@@ -33,7 +33,7 @@ namespace Projeto_Matemática
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("Somente Numeros !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite somente números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (e.KeyChar == 13)
             {
@@ -45,7 +45,7 @@ namespace Projeto_Matemática
                 }
                 else
                 {
-                    MessageBox.Show("Digite o Numero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Digite o número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 }
             }
@@ -61,7 +61,7 @@ namespace Projeto_Matemática
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("Somente Numeros !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite somente números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             if (e.KeyChar == 13)
@@ -74,7 +74,7 @@ namespace Projeto_Matemática
                 }
                 else
                 {
-                    MessageBox.Show("Digite Numero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Digite o número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 
             }
@@ -102,7 +102,7 @@ namespace Projeto_Matemática
             }
             else
             {
-                MessageBox.Show("Digite o 1º e o 2º Numero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Digite o 1º e o 2º número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -117,7 +117,7 @@ namespace Projeto_Matemática
             }
             else
             {
-                MessageBox.Show("Digite o 1º e o 2º Numero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Digite o 1º e o 2º número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -127,12 +127,18 @@ namespace Projeto_Matemática
             {
                 n1 = double.Parse(Txt_Numero1.Text);
                 n2 = double.Parse(Txt_Numero2.Text);
+                if (n2 == 0) // Não existe divisão por zero //
+                {
+                    MessageBox.Show("Não existe divisão por zero!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    Txt_Divisao.Clear();
+                    return;
+                }
                 double result = n1 / n2;
                 Txt_Divisao.Text = result.ToString();
             }
             else
             {
-                MessageBox.Show("Digite o 1º e o 2º Numero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Digite o 1º e o 2º número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -154,7 +160,7 @@ namespace Projeto_Matemática
             }
             else
             {
-                MessageBox.Show("Digite o 1º e o 2º Numero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Digite o 1º e o 2º número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
 

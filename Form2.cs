@@ -63,7 +63,7 @@ namespace Projeto_Matemática
            
             //Mensagem com condiçãoe com 2 botões 
 
-            if (MessageBox.Show("Deseja Sair do Programa ?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Deseja sair do programa?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -112,7 +112,7 @@ namespace Projeto_Matemática
 
             if (e.KeyChar == 27)
             {
-                if (MessageBox.Show("Deseja Sair do Programa ?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Deseja sair do programa?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Application.Exit();
                 }

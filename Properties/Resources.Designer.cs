@@ -173,9 +173,9 @@ namespace Projeto_Matemática.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap istockphoto_1210301928_612x612 {
+        internal static System.Drawing.Bitmap imagem_operacoes {
             get {
-                object obj = ResourceManager.GetObject("istockphoto-1210301928-612x612", resourceCulture);
+                object obj = ResourceManager.GetObject("imagem_operacoes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

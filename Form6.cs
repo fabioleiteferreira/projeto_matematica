@@ -24,7 +24,7 @@ namespace Projeto_Matemática
             {
                 e.Handled = true;
 
-                MessageBox.Show("Digigite Somente Números !!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite somente números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (e.KeyChar == 13) // Condição para verificar se o numero foi digitado //
             {
@@ -34,11 +34,11 @@ namespace Projeto_Matemática
 
                     if (numero % 2 == 0) //Condição para saber se o resto da divisão é zero para ser par
                     {
-                        MessageBox.Show("O numero Digitado é Par !!!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Mensagem de resultado
+                        MessageBox.Show("O número digitado é par!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Mensagem de resultado
                     }
                     else // se caso ao contrario //
                     {
-                        MessageBox.Show(" O Numero Digitado é impar !!!", " Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("O número digitado é ímpar!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     Txt_Numeral.Clear(); // Limpando o numero ditado// 
                     Txt_Numeral.Focus(); // posiçção do cursor //
@@ -47,7 +47,7 @@ namespace Projeto_Matemática
                 }
                 else // Caso ao contrario //
                 {
-                    MessageBox.Show("Digite um numero!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Digite um número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
         }

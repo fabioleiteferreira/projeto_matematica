@@ -145,7 +145,7 @@ namespace Projeto_Matemática
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_Igual";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Igual ou Diferente ";
+            this.Text = "Igual ou Diferente";
             this.ResumeLayout(false);
             this.PerformLayout();
 

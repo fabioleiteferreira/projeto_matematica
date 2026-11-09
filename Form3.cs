@@ -33,7 +33,7 @@ namespace Projeto_Matemática
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !(e.KeyChar == '-')) // Condição para verificar se atecla pressionada foi numero, tecla de controle e o sinal de -
             {
                 e.Handled = true; // Confirmar se foi digitado numero , teclas de controle e o sinal de -
-                MessageBox.Show(" Somente NUmeros !!!", " Aviso ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Digite somente números!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
             if (e.KeyChar == 13) // Condição para verificar se a tecla enter foi pressionada //
@@ -44,24 +44,24 @@ namespace Projeto_Matemática
 
                     if (pnn == 0) //  Conção para verificar se o numero digitado é zero//
                     {
-                        MessageBox.Show("O Numero é Neutro !!!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Mensagem para verificar se o número é neutro // 
+                        MessageBox.Show("O número é neutro (zero)!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Mensagem para verificar se o número é neutro // 
 
                     }
                     else if (pnn > 0) // Senão se, condição  para verificar se o numero é positivo //
                     {
-                        MessageBox.Show("O Numero é Positivo !!!", " Resultado ", MessageBoxButtons.OK, MessageBoxIcon.Information); // Verificando se o numero é positivo // 
+                        MessageBox.Show("O número é positivo!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Verificando se o numero é positivo // 
 
                     }
                     else // Caso contrario, se o numero for negativo //
                     {
-                        MessageBox.Show("O Número é Negativo !!!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);//Mensagem de Resultado //
+                        MessageBox.Show("O número é negativo!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);//Mensagem de Resultado //
                     }
                     Txt_Numero.Clear(); //Limpando o numero digitado //
                     Txt_Numero.Focus(); // Posicionnando o cursos //
                 }
                 else // Caso contrario, se não for digitado o numero //
                 {
-                    MessageBox.Show("Digite o Numero !!!","Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error); // Verificando se o numero foi digitado //
+                    MessageBox.Show("Digite um número!","Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error); // Verificando se o numero foi digitado //
                 }
             }
         }

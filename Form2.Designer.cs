@@ -133,7 +133,7 @@ namespace Projeto_Matemática
             this.Rad_Igual.Size = new System.Drawing.Size(194, 24);
             this.Rad_Igual.TabIndex = 8;
             this.Rad_Igual.TabStop = true;
-            this.Rad_Igual.Text = "Igual ou Diferente  ";
+            this.Rad_Igual.Text = "Igual ou Diferente";
             this.Rad_Igual.UseVisualStyleBackColor = false;
             this.Rad_Igual.CheckedChanged += new System.EventHandler(this.Rad_Igual_CheckedChanged);
             // 
@@ -162,7 +162,7 @@ namespace Projeto_Matemática
             this.Rad_Operacao.Size = new System.Drawing.Size(225, 24);
             this.Rad_Operacao.TabIndex = 10;
             this.Rad_Operacao.TabStop = true;
-            this.Rad_Operacao.Text = "Operação Aritméticas";
+            this.Rad_Operacao.Text = "Operações Aritméticas";
             this.Rad_Operacao.UseVisualStyleBackColor = false;
             this.Rad_Operacao.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -186,7 +186,7 @@ namespace Projeto_Matemática
             this.KeyPreview = true;
             this.Name = "Frm_Acesso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Projeto Matematica";
+            this.Text = "Projeto Matemática";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Frm_Acesso_KeyPress);
             this.ResumeLayout(false);
 

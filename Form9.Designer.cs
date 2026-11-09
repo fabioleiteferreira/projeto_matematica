@@ -57,7 +57,7 @@ namespace Projeto_Matemática
             this.Lbl_Titulo.Name = "Lbl_Titulo";
             this.Lbl_Titulo.Size = new System.Drawing.Size(392, 28);
             this.Lbl_Titulo.TabIndex = 0;
-            this.Lbl_Titulo.Text = "Operação Aritméticas";
+            this.Lbl_Titulo.Text = "Operações Aritméticas";
             // 
             // Lbl_Nimero1
             // 
@@ -170,7 +170,7 @@ namespace Projeto_Matemática
             this.Btn_Divisao.Name = "Btn_Divisao";
             this.Btn_Divisao.Size = new System.Drawing.Size(177, 28);
             this.Btn_Divisao.TabIndex = 9;
-            this.Btn_Divisao.Text = "/ Divião";
+            this.Btn_Divisao.Text = "/ Divisão";
             this.Btn_Divisao.UseVisualStyleBackColor = false;
             this.Btn_Divisao.Click += new System.EventHandler(this.Btn_Divisao_Click);
             // 
@@ -243,7 +243,7 @@ namespace Projeto_Matemática
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Projeto_Matemática.Properties.Resources.istockphoto_1210301928_612x612;
+            this.BackgroundImage = global::Projeto_Matemática.Properties.Resources.imagem_operacoes;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1344, 554);
             this.Controls.Add(this.Btn_Limpar);
@@ -267,7 +267,7 @@ namespace Projeto_Matemática
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_Operacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Operação Aritméticas";
+            this.Text = "Operações Aritméticas";
             this.ResumeLayout(false);
             this.PerformLayout();
 

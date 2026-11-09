@@ -55,7 +55,7 @@ namespace Projeto_Matemática
             this.Lbl_Digite2.Name = "Lbl_Digite2";
             this.Lbl_Digite2.Size = new System.Drawing.Size(228, 23);
             this.Lbl_Digite2.TabIndex = 1;
-            this.Lbl_Digite2.Text = "Digite o Numero : ";
+            this.Lbl_Digite2.Text = "Digite o número:";
             // 
             // Txt_Numero
             // 

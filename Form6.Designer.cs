@@ -53,7 +53,7 @@ namespace Projeto_Matemática
             this.Lbl_Digite.Name = "Lbl_Digite";
             this.Lbl_Digite.Size = new System.Drawing.Size(183, 23);
             this.Lbl_Digite.TabIndex = 1;
-            this.Lbl_Digite.Text = "Digite um Numero :";
+            this.Lbl_Digite.Text = "Digite um número:";
             // 
             // Txt_Numeral
             // 
