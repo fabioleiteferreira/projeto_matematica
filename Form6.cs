@@ -20,6 +20,7 @@ namespace Projeto_Matemática
 
         private void Txt_Numeral_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar != 13) Lbl_Resultado.Text = ""; // Apaga o resultado anterior ao digitar
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
@@ -34,13 +35,13 @@ namespace Projeto_Matemática
 
                     if (numero % 2 == 0) //Condição para saber se o resto da divisão é zero para ser par
                     {
-                        MessageBox.Show("O número digitado é par!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Mensagem de resultado
+                        Lbl_Resultado.Text = numero + " é PAR"; // Resultado aparece na tela
                     }
                     else // se caso ao contrario //
                     {
-                        MessageBox.Show("O número digitado é ímpar!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Lbl_Resultado.Text = numero + " é ÍMPAR";
                     }
-                    Txt_Numeral.Clear(); // Limpando o numero ditado// 
+                    Txt_Numeral.SelectAll(); // Deixa o número selecionado para digitar o próximo
                     Txt_Numeral.Focus(); // posiçção do cursor //
 
 

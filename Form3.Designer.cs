@@ -33,6 +33,7 @@ namespace Projeto_Matemática
             this.Lbl_Digite2 = new System.Windows.Forms.Label();
             this.Txt_Numero = new System.Windows.Forms.TextBox();
             this.Btn_Sair = new System.Windows.Forms.Button();
+            this.Lbl_Resultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lbl_Positivo
@@ -59,6 +60,7 @@ namespace Projeto_Matemática
             // 
             // Txt_Numero
             // 
+            this.Txt_Numero.ForeColor = System.Drawing.Color.Black;
             this.Txt_Numero.Location = new System.Drawing.Point(580, 282);
             this.Txt_Numero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_Numero.MaxLength = 9;
@@ -80,6 +82,17 @@ namespace Projeto_Matemática
             this.Btn_Sair.UseVisualStyleBackColor = false;
             this.Btn_Sair.Click += new System.EventHandler(this.Btn_Sair_Click);
             // 
+            // Lbl_Resultado
+            // 
+            this.Lbl_Resultado.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Resultado.ForeColor = System.Drawing.Color.Yellow;
+            this.Lbl_Resultado.Location = new System.Drawing.Point(397, 330);
+            this.Lbl_Resultado.Name = "Lbl_Resultado";
+            this.Lbl_Resultado.Size = new System.Drawing.Size(330, 40);
+            this.Lbl_Resultado.TabIndex = 10;
+            this.Lbl_Resultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Frm_Positivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -87,6 +100,7 @@ namespace Projeto_Matemática
             this.BackgroundImage = global::Projeto_Matemática.Properties.Resources.imagem_positivo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1176, 587);
+            this.Controls.Add(this.Lbl_Resultado);
             this.Controls.Add(this.Btn_Sair);
             this.Controls.Add(this.Txt_Numero);
             this.Controls.Add(this.Lbl_Digite2);
@@ -108,5 +122,6 @@ namespace Projeto_Matemática
         private System.Windows.Forms.Label Lbl_Digite2;
         private System.Windows.Forms.TextBox Txt_Numero;
         private System.Windows.Forms.Button Btn_Sair;
+        private System.Windows.Forms.Label Lbl_Resultado;
     }
 }

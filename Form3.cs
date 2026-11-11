@@ -16,8 +16,6 @@ namespace Projeto_Matemática
     {
         int pnn; // Declarando a Variavel inteira
 
-        int dobro; // Declarando variével inteira pública
-
         public Frm_Positivo()
         {
             InitializeComponent();
@@ -30,6 +28,7 @@ namespace Projeto_Matemática
 
         private void Txt_Numero_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar != 13) Lbl_Resultado.Text = ""; // Apaga o resultado anterior ao digitar
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !(e.KeyChar == '-')) // Condição para verificar se atecla pressionada foi numero, tecla de controle e o sinal de -
             {
                 e.Handled = true; // Confirmar se foi digitado numero , teclas de controle e o sinal de -
@@ -40,23 +39,29 @@ namespace Projeto_Matemática
             {
                 if (Txt_Numero.Text != "") // Condição para verifica se o numero foi digitado //
                 {
-                    pnn = int.Parse(Txt_Numero.Text); // A variavel recebe o numero digitado invertido
+                    if (!int.TryParse(Txt_Numero.Text, out pnn)) // Evita erro com "-" sozinho ou sinal no lugar errado
+                    {
+                        MessageBox.Show("Número inválido! Use o sinal de - só no começo.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Txt_Numero.Clear();
+                        Txt_Numero.Focus();
+                        return;
+                    }
 
                     if (pnn == 0) //  Conção para verificar se o numero digitado é zero//
                     {
-                        MessageBox.Show("O número é neutro (zero)!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Mensagem para verificar se o número é neutro // 
+                        Lbl_Resultado.Text = "0 é NEUTRO (zero)"; // Resultado aparece na tela
 
                     }
                     else if (pnn > 0) // Senão se, condição  para verificar se o numero é positivo //
                     {
-                        MessageBox.Show("O número é positivo!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Verificando se o numero é positivo // 
+                        Lbl_Resultado.Text = pnn + " é POSITIVO";
 
                     }
                     else // Caso contrario, se o numero for negativo //
                     {
-                        MessageBox.Show("O número é negativo!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);//Mensagem de Resultado //
+                        Lbl_Resultado.Text = pnn + " é NEGATIVO";
                     }
-                    Txt_Numero.Clear(); //Limpando o numero digitado //
+                    Txt_Numero.SelectAll(); // Deixa o número selecionado para digitar o próximo
                     Txt_Numero.Focus(); // Posicionnando o cursos //
                 }
                 else // Caso contrario, se não for digitado o numero //

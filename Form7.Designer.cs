@@ -105,12 +105,12 @@ namespace Projeto_Matemática
             // Lbl_Interrogação
             // 
             this.Lbl_Interrogação.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_Interrogação.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Interrogação.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Interrogação.ForeColor = System.Drawing.Color.Red;
-            this.Lbl_Interrogação.Location = new System.Drawing.Point(589, 300);
+            this.Lbl_Interrogação.Location = new System.Drawing.Point(582, 288);
             this.Lbl_Interrogação.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl_Interrogação.Name = "Lbl_Interrogação";
-            this.Lbl_Interrogação.Size = new System.Drawing.Size(32, 28);
+            this.Lbl_Interrogação.Size = new System.Drawing.Size(48, 44);
             this.Lbl_Interrogação.TabIndex = 6;
             this.Lbl_Interrogação.Text = "?";
             // 

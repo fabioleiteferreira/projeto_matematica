@@ -20,14 +20,24 @@ namespace Projeto_Matemática
 
         private void Btn_Esquerda_Click(object sender, EventArgs e)
         {
-            Numero = int.Parse(Txt_Inteiro.Text); // A variavel recebe o numero digitado e convertido para inteiro //
+            if (!int.TryParse(Txt_Inteiro.Text, out Numero)) // Evita erro se a caixa estiver vazia
+            {
+                MessageBox.Show("Digite um número inteiro!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Txt_Inteiro.Focus();
+                return;
+            }
             antecessor = Numero - 1; //A variavel recebe o calculo do antecessor
             Lbl_Ante.Text = antecessor.ToString(); // O Label recebe o resultado da variável ja convertido para string //
         }
 
         private void Btn_Sucessor_Click(object sender, EventArgs e)
         {
-            Numero = int.Parse(Txt_Inteiro.Text); // A Variavel recebe o numero digitado e convertido para inteiro //
+            if (!int.TryParse(Txt_Inteiro.Text, out Numero)) // Evita erro se a caixa estiver vazia
+            {
+                MessageBox.Show("Digite um número inteiro!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Txt_Inteiro.Focus();
+                return;
+            }
             sucessor = Numero + 1; // A variavel recebe o calculo do sucessor//
             Lbl_Sucessor.Text = sucessor.ToString(); // O Label recebe o resultado da variável ja convertido para string //
         }

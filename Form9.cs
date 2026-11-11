@@ -39,7 +39,6 @@ namespace Projeto_Matemática
             {
                 if (Txt_Numero1.Text != "")
                 {
-                    n1 = int.Parse(Txt_Numero1.Text);
                     Txt_Numero2.Focus();
                         
                 }
@@ -69,8 +68,6 @@ namespace Projeto_Matemática
 
                 if (Txt_Numero2.Text != "")
                 {
-                    n2 = int.Parse(Txt_Numero2.Text);
-                    
                 }
                 else
                 {

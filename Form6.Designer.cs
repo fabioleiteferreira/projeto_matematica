@@ -33,6 +33,7 @@ namespace Projeto_Matemática
             this.Lbl_Digite = new System.Windows.Forms.Label();
             this.Txt_Numeral = new System.Windows.Forms.TextBox();
             this.Btn_Fechar = new System.Windows.Forms.Button();
+            this.Lbl_Resultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lbl_Par
@@ -76,6 +77,17 @@ namespace Projeto_Matemática
             this.Btn_Fechar.UseVisualStyleBackColor = true;
             this.Btn_Fechar.Click += new System.EventHandler(this.Btn_Fechar_Click);
             // 
+            // Lbl_Resultado
+            // 
+            this.Lbl_Resultado.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Resultado.ForeColor = System.Drawing.Color.Navy;
+            this.Lbl_Resultado.Location = new System.Drawing.Point(239, 290);
+            this.Lbl_Resultado.Name = "Lbl_Resultado";
+            this.Lbl_Resultado.Size = new System.Drawing.Size(400, 40);
+            this.Lbl_Resultado.TabIndex = 10;
+            this.Lbl_Resultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Frm_Par
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -83,6 +95,7 @@ namespace Projeto_Matemática
             this.BackgroundImage = global::Projeto_Matemática.Properties.Resources.Imagem_Par_5;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1192, 530);
+            this.Controls.Add(this.Lbl_Resultado);
             this.Controls.Add(this.Btn_Fechar);
             this.Controls.Add(this.Txt_Numeral);
             this.Controls.Add(this.Lbl_Digite);
@@ -104,5 +117,6 @@ namespace Projeto_Matemática
         private System.Windows.Forms.Label Lbl_Digite;
         private System.Windows.Forms.TextBox Txt_Numeral;
         private System.Windows.Forms.Button Btn_Fechar;
+        private System.Windows.Forms.Label Lbl_Resultado;
     }
 }

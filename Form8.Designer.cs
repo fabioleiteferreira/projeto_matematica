@@ -101,11 +101,11 @@ namespace Projeto_Matemática
             // Lbl_Sinais
             // 
             this.Lbl_Sinais.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_Sinais.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Sinais.Location = new System.Drawing.Point(544, 246);
+            this.Lbl_Sinais.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Sinais.Location = new System.Drawing.Point(538, 236);
             this.Lbl_Sinais.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_Sinais.Name = "Lbl_Sinais";
-            this.Lbl_Sinais.Size = new System.Drawing.Size(26, 19);
+            this.Lbl_Sinais.Size = new System.Drawing.Size(40, 36);
             this.Lbl_Sinais.TabIndex = 5;
             this.Lbl_Sinais.Text = "?";
             // 

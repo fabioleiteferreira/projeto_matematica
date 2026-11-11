@@ -27,17 +27,17 @@ bloqueada com aviso.
 ![Operações aritméticas](docs/prints/02-operacoes-aritmeticas.png)
 
 ### Par ou ímpar
-Digite um número e aperte **Enter**: o programa usa o resto da divisão por 2 (`numero % 2`) para dizer se é par ou ímpar.
+Digite um número e aperte **Enter**: o programa usa o resto da divisão por 2 (`numero % 2`) e mostra na tela se é **par ou ímpar**.
 
 ![Par ou ímpar](docs/prints/03-par-ou-impar.png)
 
 ### Positivo, negativo ou neutro
-Aceita números negativos e informa se o valor é **positivo, negativo ou neutro (zero)**.
+Aceita números negativos e mostra na tela se o valor é **positivo, negativo ou neutro (zero)**. Um sinal de `-` fora do lugar é avisado em vez de travar o programa.
 
 ![Positivo, negativo ou neutro](docs/prints/04-positivo-negativo-neutro.png)
 
 ### Dobro
-Mostra o dobro do número digitado, aceitando casas decimais.
+Mostra na tela o dobro do número digitado, aceitando casas decimais.
 
 ![Dobro](docs/prints/05-dobro.png)
 
@@ -53,7 +53,7 @@ Compara dois números e mostra o sinal **>** ou **<** entre eles.
 ![Maior ou menor](docs/prints/07-maior-ou-menor.png)
 
 ### Igual ou diferente
-Compara dois números e mostra **=** ou **≠**.
+Compara dois números e mostra **=** ou **≠** entre eles.
 
 ![Igual ou diferente](docs/prints/08-igual-ou-diferente.png)
 
@@ -64,7 +64,7 @@ Compara dois números e mostra **=** ou **≠**.
 
 - **Windows Forms:** vários formulários, navegação entre telas (`Show` / `Hide`), formulários sem borda e imagens de fundo
 - **Eventos:** `Click`, `KeyPress` (Enter para confirmar, Esc para sair), `TextChanged` e `CheckedChanged`
-- **Validação de entrada:** só aceita números (`char.IsNumber`, `char.IsControl`), campos vazios e divisão por zero
+- **Validação de entrada:** só aceita números (`char.IsNumber`, `char.IsControl`), campos vazios, divisão por zero e `TryParse` para não travar com valores inválidos
 - **Estruturas de decisão:** `if / else if / else` e o operador de resto `%`
 - **Tipos e conversões:** `int.Parse`, `double.Parse`, `ToString()`
 - **Recursos do projeto:** imagens em `Properties.Resources` e mensagens com `MessageBox`

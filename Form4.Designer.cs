@@ -35,6 +35,7 @@ namespace Projeto_Matemática
             this.label1 = new System.Windows.Forms.Label();
             this.Lbl_Digite = new System.Windows.Forms.Label();
             this.Txt_Dobro = new System.Windows.Forms.TextBox();
+            this.Lbl_Resultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Btn_Sair2
@@ -81,12 +82,24 @@ namespace Projeto_Matemática
             this.Txt_Dobro.TextChanged += new System.EventHandler(this.Txt_Numero_TextChanged);
             this.Txt_Dobro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Numero_KeyPress);
             // 
+            // Lbl_Resultado
+            // 
+            this.Lbl_Resultado.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Resultado.ForeColor = System.Drawing.Color.Navy;
+            this.Lbl_Resultado.Location = new System.Drawing.Point(503, 345);
+            this.Lbl_Resultado.Name = "Lbl_Resultado";
+            this.Lbl_Resultado.Size = new System.Drawing.Size(400, 40);
+            this.Lbl_Resultado.TabIndex = 10;
+            this.Lbl_Resultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Frm_Dobro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Projeto_Matemática.Properties.Resources.Imagem_Dobro;
             this.ClientSize = new System.Drawing.Size(1317, 569);
+            this.Controls.Add(this.Lbl_Resultado);
             this.Controls.Add(this.Txt_Dobro);
             this.Controls.Add(this.Lbl_Digite);
             this.Controls.Add(this.label1);
@@ -117,5 +130,6 @@ namespace Projeto_Matemática
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Lbl_Digite;
         private System.Windows.Forms.TextBox Txt_Dobro;
+        private System.Windows.Forms.Label Lbl_Resultado;
     }
 }

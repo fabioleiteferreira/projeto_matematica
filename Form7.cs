@@ -31,7 +31,6 @@ namespace Projeto_Matemática
             {
                     if (Txt_Primeiro.Text != "")
                     {
-                    n1 = int.Parse(Txt_Primeiro.Text);
                     Txt_Segundo.Focus();// Posição do cursor para digitar o 2º numero //
                     }
                     else //Caso contrario , se não for digitado o numero //
@@ -58,16 +57,24 @@ namespace Projeto_Matemática
             {
                 if (Txt_Segundo.Text != "")
                 {
-                    n2 = int.Parse(Txt_Segundo.Text);
+                    if (Txt_Primeiro.Text == "") // Garante que o 1º número também foi digitado
+                    {
+                        MessageBox.Show("Digite o 1º número!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Txt_Primeiro.Focus();
+                        return;
+                    }
+                    if (!int.TryParse(Txt_Primeiro.Text, out n1) || !int.TryParse(Txt_Segundo.Text, out n2)) // Evita erro com número grande demais
+                    {
+                        MessageBox.Show("Número muito grande!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
 
                     if (n1 == n2) // Condição para verificar se os números são iguais //
                     {
-                        MessageBox.Show("Os números são iguais!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_Interrogação.Text = "="; // Midando a interrogação para o sinal =
                     }
                     else // Caso ao contrario os numeros não forem iguais //
                     {
-                        MessageBox.Show("Os números são diferentes!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_Interrogação.Text = "≠";
                     }
                 }

@@ -55,7 +55,6 @@ namespace Projeto_Matemática
 
                     if (n1 > n2 )
                     {
-                        MessageBox.Show("O 1º número é maior!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_Sinais.Text = ">";
                     }
                     else if (n1 == n2)
@@ -68,7 +67,6 @@ namespace Projeto_Matemática
                     }
                     else
                     {
-                        MessageBox.Show("O 2º número é maior!", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_Sinais.Text = "<";
                     }
                 }

@@ -33,6 +33,7 @@ namespace Projeto_Matemática
 
         private void Txt_Numero_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar != 13) Lbl_Resultado.Text = ""; // Apaga o resultado anterior ao digitar
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !(e.KeyChar == ',')) // Condição para ver
             {
                 e.Handled = true; // Verificando e confirma se a tecla pressionada é  numero
@@ -42,10 +43,16 @@ namespace Projeto_Matemática
 
                 if (Txt_Dobro.Text != "") // Condição Para verificar se foi digitado o numero
                 {
-                    num = double.Parse(Txt_Dobro.Text); // Variavel está recebendo o numero que  foi digitado e condição
+                    if (!double.TryParse(Txt_Dobro.Text, out num)) // Evita erro com mais de uma vírgula
+                    {
+                        MessageBox.Show("Número inválido!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Txt_Dobro.Clear();
+                        Txt_Dobro.Focus();
+                        return;
+                    }
+                    Lbl_Resultado.Text = "O dobro de " + num + " é " + (num + num); // Resultado aparece na tela
                     num = num + num; // Calculo do Dobro //
-                    MessageBox.Show("O dobro do número é: " + num, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Txt_Dobro.Clear(); // Limpando o numero digitado para o Próximo numero //
+                    Txt_Dobro.SelectAll(); // Deixa o número selecionado para digitar o próximo
                     Txt_Dobro.Focus(); // Posição do cursor //
                 }
                 else // se o numero não for digitado //
