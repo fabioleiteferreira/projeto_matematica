@@ -13,39 +13,49 @@ matemática. Foi o meu primeiro projeto de programação, desenvolvido no fim do
 ### Abertura
 Tela de apresentação que segue sozinha para o menu depois de 3 segundos.
 
+![Abertura](docs/prints/00-abertura.png)
 
 ### Menu principal
 Escolha o exercício pelos botões de opção. A tecla **Esc** ou o botão **Sair** fecham o programa com confirmação.
 
+![Menu principal](docs/prints/01-menu.png)
 
 ### Operações aritméticas
 Digite dois números e veja o resultado de **adição, subtração, multiplicação e divisão**. A divisão por zero é
 bloqueada com aviso.
 
+![Operações aritméticas](docs/prints/02-operacoes-aritmeticas.png)
 
 ### Par ou ímpar
 Digite um número e aperte **Enter**: o programa usa o resto da divisão por 2 (`numero % 2`) para dizer se é par ou ímpar.
 
+![Par ou ímpar](docs/prints/03-par-ou-impar.png)
 
 ### Positivo, negativo ou neutro
 Aceita números negativos e informa se o valor é **positivo, negativo ou neutro (zero)**.
 
+![Positivo, negativo ou neutro](docs/prints/04-positivo-negativo-neutro.png)
 
 ### Dobro
 Mostra o dobro do número digitado, aceitando casas decimais.
 
+![Dobro](docs/prints/05-dobro.png)
 
 ### Antecessor e sucessor
 Depois de digitar um número inteiro aparecem as setas: a da esquerda mostra o **antecessor** e a da direita o
 **sucessor**. A lixeira limpa tudo.
 
+![Antecessor e sucessor](docs/prints/06-antecessor-e-sucessor.png)
 
 ### Maior ou menor
 Compara dois números e mostra o sinal **>** ou **<** entre eles.
 
+![Maior ou menor](docs/prints/07-maior-ou-menor.png)
 
 ### Igual ou diferente
 Compara dois números e mostra **=** ou **≠**.
+
+![Igual ou diferente](docs/prints/08-igual-ou-diferente.png)
 
 
 ---
@@ -67,7 +77,7 @@ Compara dois números e mostra **=** ou **≠**.
 2. Abra `Projeto Matemática.sln`.
 3. Aperte **F5**.
 
-Para gerar prints de todas as telas, use `tools/TIRAR-PRINTS.bat`: ele compila o projeto e salva uma imagem de cada tela em `docs/prints`.
+Para gerar de novo os prints de todas as telas, use `tools/TIRAR-PRINTS.bat`: ele compila o projeto e salva uma imagem de cada tela em `docs/prints`.
 
 ---
 
